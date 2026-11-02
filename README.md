@@ -5,7 +5,7 @@
 ---
 
 
-## Introduction: The European Single Market and the Cross-Border Tax Framework
+## The European Single Market and the Cross-Border Tax Framework
 
 
 The European Single Market represents one of the greatest economic integration achievements in modern history, enabling the frictionless circulation of goods, services, capital, and labor across 27 sovereign member states. With an integrated economic territory encompassing more than 450 million consumers and tens of millions of registered commercial enterprises, intra-community commerce within the European Union generates trillions of euros in annual transaction volume.
