@@ -19,7 +19,11 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "EU VAT & VIES Guide: Cross-Border Tax Compliance and Verification",
-      "image": ["https://isaaccoleman09.github.io/vies-vat-guide/viesvat_system_architecture.png"],
+      "image": [
+        "https://isaaccoleman09.github.io/vies-vat-guide/viesvat_system_architecture.png",
+        "https://isaaccoleman09.github.io/vies-vat-guide/cross_border_vat_rates.png",
+        "https://isaaccoleman09.github.io/vies-vat-guide/compliance_and_due_diligence.png"
+      ],
       "author": {
         "@type": "Person",
         "name": "Isaac Coleman"
@@ -146,50 +150,25 @@
             font-size: 1.25rem;
             color: var(--text-muted);
             max-width: 800px;
-            margin: 0 auto 2rem;
-        }
-
-        .article-meta {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1.5rem;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border-card);
-        }
-
-        .part-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(168, 85, 247, 0.2));
-            color: #fff;
-            font-family: 'Outfit', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 700;
-            padding: 0.4rem 1.25rem;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            margin: 3.5rem 0 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            margin: 0 auto;
         }
 
         h2.section-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.75rem;
+            font-size: 1.85rem;
             font-weight: 700;
             color: var(--text-heading);
-            margin: 2rem 0 1rem;
+            margin: 3rem 0 1.25rem;
             line-height: 1.3;
+            letter-spacing: -0.3px;
         }
 
         h3.sub-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             font-weight: 600;
             color: var(--primary);
-            margin: 1.5rem 0 0.75rem;
+            margin: 2rem 0 0.85rem;
         }
 
         p {
@@ -197,8 +176,8 @@
             color: var(--text-main);
         }
 
-        ul.content-list, ol.numbered-list {
-            margin: 1rem 0 1.5rem 1.75rem;
+        ul.content-list {
+            margin: 1rem 0 1.75rem 1.75rem;
             color: var(--text-main);
         }
 
@@ -207,7 +186,7 @@
         }
 
         figure.article-image {
-            margin: 2.75rem 0;
+            margin: 3rem 0;
             border-radius: 16px;
             overflow: hidden;
             border: 1px solid var(--border-card);
@@ -278,23 +257,13 @@
                 <span class="hero-tag">International Compliance & Taxation Manual</span>
                 <h1 class="article-title">EU VAT & VIES Guide</h1>
                 <p class="hero-subtitle">Comprehensive Cross-Border Tax Compliance, VIES Verification & Intra-Community Trade Manual | Kompleksowy Przewodnik po VAT UE i Weryfikacji VIES</p>
-                <div class="article-meta">
-                    <span>Published: November 2, 2026</span>
-                    <span>•</span>
-                    <span>Length: 3,558 words</span>
-                    <span>•</span>
-                    <span>Language: English (50%) & Polish (50%)</span>
-                </div>
             </div>
 
-            <div class="part-badge">PART 1: INTERNATIONAL COMPLIANCE & VIES VERIFICATION (ENGLISH)</div>
-<h2 class="section-title">1. INTRODUCTION: THE EUROPEAN SINGLE MARKET AND THE CROSS-BORDER TAX FRAMEWORK</h2>
+            <h2 class="section-title">Introduction: The European Single Market and the Cross-Border Tax Framework</h2>
 <p>The European Single Market represents one of the greatest economic integration achievements in modern history, enabling the frictionless circulation of goods, services, capital, and labor across 27 sovereign member states. With an integrated economic territory encompassing more than 450 million consumers and tens of millions of registered commercial enterprises, intra-community commerce within the European Union generates trillions of euros in annual transaction volume.</p>
 <p>However, the legal abolition of physical border controls and customs barriers between member states did not eliminate national taxation boundaries. Value Added Tax (VAT) remains an indirect consumption tax administered independently by national revenue authorities in each member country. To prevent distortions of competition, double taxation, or unintended tax evasion, the European Union adopted a sophisticated destination-based taxation principle for commercial transactions. Under this legal framework, goods exported from one member state to another are exempt from VAT in the country of origin (commonly referred to as zero-rating or Intra-Community Supply of Goods) and become taxable upon arrival in the destination member state (Intra-Community Acquisition of Goods).</p>
 <p>For chief financial officers, international trade directors, and tax professionals, operating within this cross-border environment presents dual realities. On one hand, intra-community commerce unlocks massive commercial scalability, supply chain synergies, and expanded revenue opportunities. On the other hand, it imposes strict evidentiary burdens and rigorous compliance obligations. The legal privilege of issuing an invoice with a 0% VAT rate is not an unconditional statutory entitlement; it is an exception to the general rule of domestic taxation. Whenever tax authorities perform cross-border fiscal audits, the supplier bears the primary legal burden of proving that every transactional condition was rigorously fulfilled. Minor administrative flaws, unverified buyer tax identifiers, or missing proof of transport can abruptly transform a standard commercial transaction into a devastating tax liability.</p>
-<ol class="numbered-list">
-  <li>WHAT IS VIES AND HOW DOES EU VAT VALIDATION WORK?</li>
-</ol>
+<h2 class="section-title">What is VIES and How Does EU VAT Validation Work?</h2>
 <p>To manage the immense administrative complexity of monitoring cross-border tax exemptions without impeding international logistics, the European Commission established the VAT Information Exchange System (VIES). VIES is not a centralized fiscal database where individual taxpayer records are permanently stored in Brussels. Instead, it operates as a secure, real-time distributed communication intranet connecting the independent tax authority databases of all 27 EU member states.</p>
 <p>When an enterprise initiates a VAT validation request through VIES, the central routing server transmits an encrypted query directly to the national database of the country that originally issued the tax identification number. The local revenue authority system evaluates the query against its active registry and returns an instantaneous structured response:</p>
 <ul class="content-list">
@@ -304,7 +273,12 @@
   <li>Consultation token: A unique timestamped cryptographic confirmation code that serves as conclusive audit evidence proving that the inquiry was officially performed at that precise date and time.</li>
 </ul>
 <p>The distinction between domestic VAT registration and intra-community VAT-UE status is a fundamental distinction that frequently trips up expanding businesses. In many European jurisdictions, an enterprise may be legally registered for domestic tax purposes, yet remain unverified or unauthorized to conduct intra-community transactions. Engaging in cross-border trade without confirming active VIES status exposes both trading partners to immediate fiscal reclassification.</p>
-<h2 class="section-title">3. ANATOMY OF EU VAT NUMBERS AND VALIDATION ALGORITHMS</h2>
+
+<figure class="article-image">
+    <img src="viesvat_system_architecture.png" alt="EU VAT and VIES System Architecture - viesvat.com" loading="lazy">
+    <figcaption>Figure 1: EU VAT & VIES Real-Time Verification Architecture and Cross-Border Validation (viesvat.com)</figcaption>
+</figure>
+<h2 class="section-title">Anatomy of EU VAT Numbers and Validation Algorithms</h2>
 <p>Every member state adheres to European standard formatting rules, beginning with a two-letter country code (ISO 3166-1 alpha-2, with Greece notably using the fiscal prefix EL instead of GR). However, the internal numerical and alphanumeric composition differs significantly across jurisdictions:</p>
 <ul class="content-list">
   <li>Germany (DE): Prefix DE followed by exactly 9 digits (e.g., DE 123456789).</li>
@@ -316,20 +290,16 @@
   <li>Belgium (BE): Prefix BE followed by 10 digits (historically 9 digits preceded by an added leading zero).</li>
 </ul>
 <p>Each jurisdiction applies proprietary mathematical checksum algorithms—frequently based on Modulo 11 or Modulo 97—to verify internal consistency before transmitting queries to VIES. Automated digital validation protocols prevent costly shipment delays and administrative disputes by catching formatting anomalies prior to invoice generation.</p>
-<ol class="numbered-list">
-  <li>THE MATERIAL CONDITION OF ZERO-RATING: TSUE CASE LAW & DUE DILIGENCE</li>
-</ol>
+<h2 class="section-title">The Material Condition of Zero-Rating: TSUE Case Law & Due Diligence</h2>
 <p>Since the implementation of the European Union "Quick Fixes" reform package (Council Directive (EU) 2018/1910 amending Directive 2006/112/EC), possessing a valid, active intra-community VAT identification number registered in VIES has been elevated to an absolute substantive material condition (condition de fond) for applying the 0% zero-rate on Intra-Community Supplies of Goods. Furthermore, the supplier must properly submit their comprehensive recapitulative statement (EC Sales List / VAT-UE statement).</p>
 <p>If a foreign customer cannot be validated in the official VIES system at the exact tax point date of the supply, the supplier is legally prohibited from applying the 0% rate. In such circumstances, the transaction must be invoiced with domestic VAT applicable in the supplier's country, or the supplier must absorb the tax assessment retroactively out of pocket.</p>
 <p>This legal standard highlights why leading multinational enterprises, logistics providers, and professional advisory firms rely on automated verification portals such as <a href="https://viesvat.com/" class="anchor-highlight">https://viesvat.com/</a> to conduct real-time compliance checks, batch validations, and secure timestamped audit documentation. Incorporating systematic validation into enterprise resource planning (ERP) workflows eliminates catastrophic tax adjustments and shields company directors from fiscal liability.</p>
 <p>The Court of Justice of the European Union (CJEU / TSUE) has reinforced this principle through decisive jurisprudence (including landmark rulings in Cases C-273/11 Mecsek-Gabona, C-409/04 Teleos, and C-80/11 Mahagében). The Court consistently maintains that tax administrations are legally obligated to refuse the 0% exemption if objective evidence demonstrates that the taxpayer knew, or reasonably ought to have known through the exercise of ordinary commercial due diligence, that the transaction participated in a VAT evasion scheme.</p>
-<ol class="numbered-list">
-  <li>INTRA-COMMUNITY SUPPLY OF GOODS (ICS) VS. B2B CROSS-BORDER SERVICES</li>
-</ol>
+<h2 class="section-title">Intra-Community Supply of Goods (ICS) vs. B2B Cross-Border Services</h2>
 <p>Cross-border commercial operations fundamentally bifurcate into two distinct regulatory frameworks depending on whether the subject matter involves tangible merchandise or intangible professional services.</p>
-<p>Intra-Community Supply of Goods (ICS / WDT):</p>
+<h3 class="sub-title">Intra-Community Supply of Goods (ICS / WDT):</h3>
 <p>When physical commodities move across borders between two taxable entities, the supplier invoices the transaction at a 0% VAT rate, explicitly referencing both VAT-UE numbers and the statutory citation (Art. 138 Directive 2006/112/EC). The customer accounts for the acquisition by recording both output VAT and corresponding deductible input VAT simultaneously (Intra-Community Acquisition / WNT), yielding a cash-neutral tax result. Physical movement across an international border within the EU must be indisputably documented through unimpeachable transport records.</p>
-<p>Cross-Border Business-to-Business (B2B) Services:</p>
+<h3 class="sub-title">Cross-Border Business-to-Business (B2B) Services:</h3>
 <p>For commercial services—including software engineering, architectural design, corporate consultancy, legal advice, and marketing—the general place of supply rule is governed by Article 44 of Directive 2006/112/EC:</p>
 <ul class="content-list">
   <li>The place of taxation is deemed to be the jurisdiction where the customer has established their business.</li>
@@ -337,24 +307,27 @@
   <li>The supplier issues an invoice with no domestic VAT, marking the rate as "NP / Out of Scope" and appending the mandatory legal notation: "Reverse charge - Article 44 and 196 of Council Directive 2006/112/EC".</li>
   <li>The foreign client calculates and remits the VAT in their domestic return under the reverse charge mechanism (Autoliquidation).</li>
 </ul>
-<h2 class="section-title">6. STANDARD PROOF OF TRANSPORT AND CMR REQUIREMENTS</h2>
+<h2 class="section-title">Standard Proof of Transport and CMR Requirements</h2>
 <p>The single most vulnerable area uncovered during tax audits is deficient transport documentation. Under Article 45a of Council Implementing Regulation (EU) No 282/2011, a statutory safe-harbor presumption of transport exists:</p>
 <ul class="content-list">
   <li>Transport organized by supplier: The supplier must possess at least two non-contradictory documents issued by independent parties (e.g., signed international CMR consignment note, bill of lading, carrier invoice, transit insurance policy, or official warehouse receipt).</li>
   <li>Transport organized by buyer (Ex-Works / EXW): The supplier must obtain a written declaration from the purchaser certifying that the goods have been transported to the destination member state, identifying the destination, date, transport company, and vehicle registration. The buyer must provide this declaration by the 10th day of the month following delivery.</li>
   <li>Crucial Warning: A CMR consignment note signed only in box 22 (loading) merely proves dispatch; box 24 must bear the official corporate stamp, delivery date, and authentic signature of the receiving party in the destination country.</li>
 </ul>
-<ol class="numbered-list">
-  <li>CROSS-BORDER B2C E-COMMERCE AND THE ONE-STOP-SHOP (OSS)</li>
-</ol>
+
+<figure class="article-image">
+    <img src="cross_border_vat_rates.png" alt="Cross-Border VAT Rates and Reverse Charge - viesvat.com" loading="lazy">
+    <figcaption>Figure 2: Comparative European VAT Rates & Reverse Charge Framework (viesvat.com)</figcaption>
+</figure>
+<h2 class="section-title">Cross-Border B2C E-Commerce and the One-Stop-Shop (OSS)</h2>
 <p>While B2B cross-border commerce enjoys reverse charge and zero-rating, consumer transactions (B2C) follow entirely different fiscal principles under the EU E-Commerce VAT Package:</p>
 <ul class="content-list">
   <li>Unified 10,000 EUR EU-Wide Threshold: Below 10,000 EUR in total annual cross-border B2C sales, businesses may charge their domestic VAT rate. Once cumulative sales to consumers across the EU exceed 10,000 EUR, goods must be taxed at the specific VAT rate of the consumer's member state (e.g., 19% in Germany, 20% in France, 22% in Italy, 23% in Poland, 27% in Hungary).</li>
   <li>The One-Stop-Shop (OSS) Architecture: Retailers register for Union OSS in their home member state. All quarterly cross-border B2C transactions across the entire EU are declared in a single consolidated electronic return, and one aggregate tax payment is made to the domestic revenue office, which redistributes funds to the destination states.</li>
 </ul>
-<h2 class="section-title">8. TEN GOLDEN RULES OF CROSS-BORDER TRADE COMPLIANCE</h2>
-<h3 class="sub-title">Implementing standardized internal controls insulates commercial enterprises against catastrophic audit adjustments:</h3>
-<ol class="numbered-list">
+<h2 class="section-title">Ten Golden Rules of Cross-Border Trade Compliance</h2>
+<p>Implementing standardized internal controls insulates commercial enterprises against catastrophic audit adjustments:</p>
+<ul class="content-list">
   <li>Validate every foreign VAT-UE number in VIES prior to executing contracts, issuing invoices, or dispatching inventory.</li>
   <li>Archive cryptographic consultation tokens and date-stamped verification reports for ten full calendar years.</li>
   <li>Establish robust contract terms clearly specifying Incoterms, delivery responsibilities, and tax compliance representations.</li>
@@ -365,16 +338,15 @@
   <li>Reconcile monthly recapitulative statements (VAT-UE / EC Sales Lists) meticulously against general ledger accounting entries.</li>
   <li>Enforce formal customer onboarding procedures incorporating background checks, proof of address, and beneficial ownership identification.</li>
   <li>Conduct recurring independent internal tax audits to verify procedural compliance across all active supply chains.</li>
-</ol>
+</ul>
+<h2 class="section-title">Strategic Conclusion and Executive Recommendations</h2>
+<p>In an increasingly digitized and scrutinized European trading environment, cross-border tax compliance must be treated as a strategic business enabler rather than an administrative afterthought. Implementing rigorous VIES verification, securing complete transport documentation, and maintaining comprehensive audit trails safeguards operating margins, eliminates unexpected tax exposure, and fosters sustainable commercial relationships across the entire European Single Market.</p>
 
 
-            <div class="part-badge">CZĘŚĆ 2: KOMPLEKSOWY POLSKI PRZEWODNIK PO PODATKU VAT UE I WERYFIKACJI VIES (POLISH)</div>
-<h2 class="section-title">9. WPROWADZENIE: ZNACZENIE JEDNOLITEGO RYNKU DLA POLSKICH PRZEDSIĘBIORSTW</h2>
+            <h2 class="section-title">Wprowadzenie: Znaczenie jednolitego rynku dla polskich przedsiębiorstw</h2>
 <p>Swoboda przepływu towarów i usług na rynku Unii Europejskiej otworzyła przed polskimi przedsiębiorstwami bezprecedensowe możliwości rozwoju. Zlikwidowanie barier celnych i granic fizycznych umożliwiło rodzimym producentom, dystrybutorom oraz firmom usługowym bezpośrednie dotarcie do setek milionów zamożnych konsumentów w 27 państwach członkowskich. Polska stała się jednym z wiodących eksporterów w regionie Europy Środkowo-Wschodniej, dostarczając na rynki zachodnioeuropejskie zaawansowane wyroby przemysłowe, meble, stolarkę budowlaną, produkty z tworzyw sztucznych oraz usługi inżynieryjne i transportowe.</p>
 <p>Jednak jednolity rynek towarowy nie jest tożsamy z jednolitym rynkiem fiskalnym. Podatek od towarów i usług (VAT) pozostaje w kompetencji poszczególnych państw członkowskich, podlegając jedynie ogólnej harmonizacji w ramach unijnej Dyrektywy 2006/112/WE. W transakcjach transgranicznych wprowadzono zasadę opodatkowania w kraju przeznaczenia, która pozwala na bezpodatkowe przemieszczanie towarów pod warunkiem, że nabywca jest czynnym podatnikiem VAT rozliczającym transakcję w swoim kraju. Stosowanie zerowej stawki VAT (0%) przy Wewnątrzwspólnotowej Dostawie Towarów (WDT) stanowi ogromny przywilej handlowy, ale wiąże się ze ścisłymi wymogami formalno-prawnymi i rygorystycznymi obowiązkami dowodowymi.</p>
-<ol class="numbered-list">
-  <li>CZYM JEST SYSTEM VIES I JAK DZIAŁA BAZA DANYCH KOMISJI EUROPEJSKIEJ?</li>
-</ol>
+<h2 class="section-title">Czym jest system VIES i jak działa baza danych Komisji Europejskiej?</h2>
 <p>System Wymiany Informacji o VAT (VIES – VAT Information Exchange System) to zinformatyzowana sieć telekomunikacyjna powołana przez Komisję Europejską w celu umożliwienia natychmiastowej wymiany danych podatkowych pomiędzy państwami członkowskimi UE. VIES nie jest pojedynczą bazą przechowującą dane wszystkich europejskich spółek, lecz zdecentralizowanym mechanizmem łączącym krajowe rejestry podatników podatku od wartości dodanej.</p>
 <p>Podczas wysyłania zapytania do systemu VIES, serwer centralny w Brukseli przesyła żądanie do administracji skarbowej danego państwa. W odpowiedzi użytkownik otrzymuje:</p>
 <ul class="content-list">
@@ -384,7 +356,7 @@
   <li>Unikalny numer referencyjny zapytania (Consultation Token) z dokładnym znacznikiem czasu, który ma moc oficjalnego dowodu w postępowaniu skarbowym.</li>
 </ul>
 <p>Brak potwierdzenia numeru NIP-UE kontrahenta w systemie VIES w dacie realizacji dostawy definitywnie pozbawia polskiego dostawcę prawa do zastosowania preferencyjnej stawki 0% VAT.</p>
-<h2 class="section-title">11. STRUKTURA UNIJNYCH NUMERÓW IDENTYFIKACJI PODATKOWEJ (NIP-UE)</h2>
+<h2 class="section-title">Struktura unijnych numerów identyfikacji podatkowej (NIP-UE)</h2>
 <p>Każdy unijny numer VAT składa się z dwuliterowego kodu państwa (zgodnego z normą ISO 3166-1 alpha-2, przy czym Grecja posługuje się kodem EL) oraz ciągu cyfr lub liter przypisanych przez krajowy organ podatkowy:</p>
 <ul class="content-list">
   <li>Polska (PL): 10 cyfr bazowego numeru NIP.</li>
@@ -396,23 +368,17 @@
   <li>Czechy (CZ): 8, 9 lub 10 cyfr.</li>
 </ul>
 <p>Zrozumienie algorytmów weryfikacyjnych i zasad tworzenia identyfikatorów pozwala unikać pomyłek pisarskich i błędów fakturowania, które wstrzymują procedury celne i spedycyjne.</p>
-<ol class="numbered-list">
-  <li>WARUNKI MATERIALNE I FORMALNE STOSOWANIA STAWKI 0% VAT PRZY WDT</li>
-</ol>
+<h2 class="section-title">Warunki materialne i formalne stosowania stawki 0% VAT przy WDT</h2>
 <p>Przełomowa unijna reforma pakietu Quick Fixes wprowadziła fundamentalną zmianę w wykładni art. 138 Dyrektywy 2006/112/WE. Posiadanie przez nabywcę ważnego numeru identyfikacyjnego VAT-UE w systemie VIES przestało być traktowane jako zwykły warunek formalny – stało się bezwzględnym warunkiem materialnoprawnym zastosowania stawki 0%.</p>
-<p>Aby polski podatnik mógł legalnie zastosować stawkę 0% VAT przy WDT, muszą zostać spełnione cztery kardynalne warunki:</p>
-<ol class="numbered-list">
+<p>Aby polski podatnik mógł legalnie zastosować stawkę 0% VAT przy WDT, muszą zostać spełnione kluczowe warunki:</p>
+<ul class="content-list">
   <li>Dostawca jest zarejestrowanym podatnikiem VAT-UE w Polsce.</li>
   <li>Nabywca posiada ważny, aktywny numer VAT-UE nadany przez inne państwo członkowskie, zweryfikowany w systemie VIES na dzień transakcji.</li>
   <li>Towary zostały fizycznie wywiezione z terytorium Polski i dostarczone na terytorium innego państwa UE.</li>
-</ol>
-<p>4. Przed upływem terminu do złożenia deklaracji podatkowej za dany okres dostawca posiada w swojej dokumentacji jednoznaczne dowody potwierdzające wywóz i odbiór towarów (przede wszystkim list przewozowy CMR z pieczęcią i podpisem odbiorcy w rubryce 24).</p>
-<ol class="numbered-list">
+  <li>Przed upływem terminu do złożenia deklaracji podatkowej za dany okres dostawca posiada w swojej dokumentacji jednoznaczne dowody potwierdzające wywóz i odbiór towarów (przede wszystkim list przewozowy CMR z pieczęcią i podpisem odbiorcy w rubryce 24).</li>
   <li>Dostawca terminowo i rzetelnie złożył informację podsumowującą VAT-UE w urzędzie skarbowym.</li>
-</ol>
-<ol class="numbered-list">
-  <li>PROCEDURA ODWROTNEGO OBCIĄŻENIA (REVERSE CHARGE / AUTOLIQUIDATION)</li>
-</ol>
+</ul>
+<h2 class="section-title">Procedura odwrotnego obciążenia (Reverse Charge / Autoliquidation)</h2>
 <p>W transgranicznym obrocie usługami pomiędzy przedsiębiorcami (B2B) kluczową rolę odgrywa reguła terytorialności wyrażona w art. 44 Dyrektywy 2006/112/WE (art. 28b polskiej ustawy o VAT). Miejscem świadczenia usług na rzecz podatnika jest miejsce, w którym podatnik będący usługobiorcą posiada siedzibę działalności gospodarczej.</p>
 <p>Oznacza to, że polski wykonawca świadczący usługi na rzecz kontrahenta z innego państwa UE:</p>
 <ul class="content-list">
@@ -421,39 +387,37 @@
   <li>Wpisuje obowiązkową adnotację prawną: „Odwrotne obciążenie / Reverse charge”.</li>
   <li>Usługobiorca rozlicza podatek należny i naliczony we własnym kraju, co gwarantuje pełną neutralność podatkową.</li>
 </ul>
-<ol class="numbered-list">
-  <li>HANDEL ELEKTRONICZNY B2C I UNIJNA PROCEDURA ONE STOP SHOP (VAT-OSS)</li>
-</ol>
+<h2 class="section-title">Handel elektroniczny B2C i unijna procedura One Stop Shop (VAT-OSS)</h2>
 <p>Od 1 lipca 2021 roku przedsiębiorcy prowadzący sprzedaż wysyłkową na rzecz osób prywatnych (B2C) podlegają zunifikowanym regułom unijnego pakietu e-commerce. Wprowadzono jednolity próg obrotu transgranicznego w wysokości 10 000 EUR (ok. 42 000 PLN) rocznie dla całej sprzedaży do konsumentów w innych krajach UE łącznie:</p>
 <ul class="content-list">
   <li>Poniżej progu 10 000 EUR: Sprzedawca może opodatkowywać transakcje krajową stawką VAT (w Polsce 23%) i rozliczać je w standardowym pliku JPK_V7.</li>
   <li>Powyżej progu 10 000 EUR: Każda kolejna wysyłka musi zostać opodatkowana stawką VAT obowiązującą w kraju zamieszkania konsumenta.</li>
 </ul>
 <p>Procedura One Stop Shop (OSS) eliminuje obowiązek rejestracji do VAT w każdym państwie docelowym. Przedsiębiorca rejestruje się do procedury OSS w Drugim Urzędzie Skarbowym Warszawa-Śródmieście, składa kwartalną deklarację elektroniczną VIU-DO i wpłaca łączną kwotę podatku w euro na rachunek polskiego urzędu, który samodzielnie dokonuje dystrybucji środków.</p>
-<h2 class="section-title">15. OBOWIĄZKI MAGAZYNOWE I PUŁAPKI FULFILLMENTU TRANSGRANICZNEGO</h2>
+<h2 class="section-title">Obowiązki magazynowe i pułapki fulfillmentu transgranicznego</h2>
 <p>Korzystanie z zagranicznych centrów logistycznych w modelach fulfillmentowych (np. Amazon FBA we Francji, Niemczech czy Włoszech) wyłącza możliwość stosowania uproszczenia OSS dla sprzedaży z tych magazynów.</p>
 <p>Przemieszczenie własnych towarów do magazynu w innym kraju UE stanowi nietransakcyjne WDT w Polsce i nietransakcyjne WNT w kraju magazynowania. Wymaga to:</p>
-<ol class="numbered-list">
+<ul class="content-list">
   <li>Rejestracji do lokalnego podatku VAT w kraju, w którym znajduje się magazyn.</li>
   <li>Regularnego składania lokalnych deklaracji podatkowych.</li>
   <li>Raportowania każdej sprzedaży realizowanej z lokalnego magazynu do miejscowych odbiorców jako dostawy krajowej w danym państwie.</li>
-</ol>
+</ul>
 <p>Brak terminowej rejestracji skutkuje natychmiastowym zablokowaniem konta na platformie handlowej oraz drakońskimi karami ze strony zagranicznych organów podatkowych.</p>
 
 <figure class="article-image">
     <img src="compliance_and_due_diligence.png" alt="Tax Due Diligence and Compliance Security - viesvat.com" loading="lazy">
-    <figcaption>Rysunek 3: Standard Należytej Staranności Kupieckiej i Archiwizacja Dokumentacji Audytowej (viesvat.com)</figcaption>
+    <figcaption>Figure 3: Standard Należytej Staranności Kupieckiej i Archiwizacja Dokumentacji Audytowej (viesvat.com)</figcaption>
 </figure>
-<h2 class="section-title">16. INSTYTUCJA NALEŻYTEJ STARANNOŚCI W ORZECZNICTWIE TSUE</h2>
+<h2 class="section-title">Instytucja należytej staranności w orzecznictwie TSUE</h2>
 <p>W walce z transgranicznymi wyłudzeniami podatkowymi (karuzelami VAT) sądy administracyjne i Trybunał Sprawiedliwości UE bezwzględnie stosują standard należytej staranności kupieckiej. Zgodnie z utrwaloną linią orzeczniczą TSUE, podatnik traci prawo do stawki 0% VAT oraz prawo do odliczenia podatku naliczonego, jeżeli organy wykażą, że na podstawie obiektywnych okoliczności wiedział lub powinien był wiedzieć, że jego transakcja stanowiła element oszustwa.</p>
-<h3 class="sub-title">Kluczowe elementy dochowania należytej staranności:</h3>
+<p>Kluczowe elementy dochowania należytej staranności:</p>
 <ul class="content-list">
   <li>Weryfikacja statusu NIP-UE w VIES i archiwizacja raportów z numerem potwierdzenia.</li>
   <li>Pozyskanie aktualnych odpisów z rejestrów handlowych (np. KRS, Kbis, Handelsregister).</li>
   <li>Weryfikacja tożsamości osób reprezentujących kontrahenta i podpisujących dokumenty.</li>
   <li>Kontrola warunków handlowych odbiegających od standardów rynkowych (nietypowo niskie marże, żądania nietypowych płatności gotówkowych lub rachunków powierniczych).</li>
 </ul>
-<h2 class="section-title">17. PRZEGLĄD STAWEK PODATKU OD WARTOŚCI DODANEJ W WYBRANYCH KRAJACH UE</h2>
+<h2 class="section-title">Przegląd stawek podatku od wartości dodanej w wybranych krajach UE</h2>
 <p>Dla ułatwienia planowania budżetu podatkowego w transgranicznym handlu towarami i usługami, poniżej przedstawiono zestawienie podstawowych i obniżonych stawek podatku VAT w kluczowych gospodarkach unijnych:</p>
 <ul class="content-list">
   <li>Niemcy (Umsatzsteuer): Stawka podstawowa 19%, stawka obniżona 7% (obejmująca wybrane artykuły żywnościowe, książki, prasę oraz transport pasażerski).</li>
@@ -468,14 +432,14 @@
   <li>Rumunia: Stawka podstawowa 19%, stawki obniżone 9% oraz 5%.</li>
 </ul>
 <p>Znajomość stawek ma fundamentalne znaczenie zwłaszcza przy kalkulacji cen w handlu elektronicznym B2C rozliczanym przez procedurę One Stop Shop (OSS), gdzie marża brutto jest bezpośrednio uzależniona od stawki podatkowej w kraju nabywcy.</p>
-<h2 class="section-title">18. PROCEDURY KOREKTY DEKLARACJI W PRZYPADKU OPÓŹNIONYCH DOKUMENTÓW TRANSPORTOWYCH</h2>
+<h2 class="section-title">Procedury korekty deklaracji w przypadku opóźnionych dokumentów transportowych</h2>
 <p>W praktyce handlowej polski eksporter nierzadko staje przed problemem opóźnień w spływie dokumentacji przewozowej od międzynarodowych spedytorów. Zgodnie z art. 42 ust. 12 polskiej ustawy o VAT:</p>
-<ol class="numbered-list">
+<ul class="content-list">
   <li>Jeżeli podatnik nie posiada dowodów dostarczenia towaru przed upływem terminu do złożenia deklaracji za dany miesiąc, nie wykazuje tej dostawy w ewidencji za ten okres.</li>
-</ol>
-<p>2. Dostawę wykazuje się w kolejnym okresie rozliczeniowym. Jeżeli do terminu złożenia deklaracji za ten kolejny okres dokumenty nadal nie napłyną, podatnik ma ustawowy obowiązek wykazać transakcję ze stawką krajową właściwą dla danego towaru (najczęściej 23%).</p>
-<p>3. Dopiero po fizycznym otrzymaniu potwierdzenia odbioru towaru (podpisanego listu CMR) podatnik ma prawo dokonać korekty podatku należnego w rozliczeniu za okres, w którym powstał obowiązek podatkowy.</p>
-<h2 class="section-title">19. REJESTRY HANDLOWE I DOKUMENTACJA WERYFIKACYJNA</h2>
+  <li>Dostawę wykazuje się w kolejnym okresie rozliczeniowym. Jeżeli do terminu złożenia deklaracji za ten kolejny okres dokumenty nadal nie napłyną, podatnik ma ustawowy obowiązek wykazać transakcję ze stawką krajową właściwą dla danego towaru (najczęściej 23%).</li>
+  <li>Dopiero po fizycznym otrzymaniu potwierdzenia odbioru towaru (podpisanego listu CMR) podatnik ma prawo dokonać korekty podatku należnego w rozliczeniu za okres, w którym powstał obowiązek podatkowy.</li>
+</ul>
+<h2 class="section-title">Rejestry handlowe i dokumentacja weryfikacyjna</h2>
 <p>Przed nawiązaniem stałej współpracy handlowej konieczne jest zgromadzenie kompletnej teczki audytowej klienta. Dokumentacja ta powinna zawierać:</p>
 <ul class="content-list">
   <li>Zrzut ekranu z systemu VIES z potwierdzeniem ważności numeru w dacie transakcji.</li>
@@ -484,19 +448,17 @@
   <li>Kopię dowodu tożsamości osoby uprawnionej do reprezentacji lub pełnomocnictwo handlowe.</li>
   <li>Umowę handlową precyzującą warunki transportu, przeniesienia prawa do rozporządzania towarem oraz reguły Incoterms.</li>
 </ul>
-<ol class="numbered-list">
-  <li>NAJCZĘŚCIEJ ZADAWANE PYTANIA / FREQUENTLY ASKED QUESTIONS (FAQ)</li>
-</ol>
-<p>Pytanie 1: Co zrobić, jeśli numer kontrahenta w VIES ma status „nieaktywny”?</p>
-<p>Odpowiedź: W takiej sytuacji polski sprzedawca pod żadnym pozorem nie może wystawić faktury ze stawką 0% VAT. Należy zażądać wyjaśnień od kontrahenta, wstrzymać wysyłkę towaru lub wystawić fakturę z krajową stawką 23% VAT do czasu uzyskania oficjalnego potwierdzenia rejestracji.</p>
-<p>Pytanie 2: Czy list przewozowy CMR w wersji elektronicznej (e-CMR) jest honorowany przez urzędy skarbowe?</p>
-<p>Odpowiedź: Tak, polskie i unijne przepisy akceptują elektroniczne listy przewozowe pod warunkiem, że system e-CMR gwarantuje integralność danych, jednoznaczną identyfikację stron oraz zawiera cyfrowe poświadczenie odbioru ładunku przez nabywcę.</p>
-<p>Pytanie 3: Jak długo należy przechowywać dokumentację transakcji wewnątrzwspólnotowych?</p>
-<p>Odpowiedź: Dokumentację księgową, listy przewozowe CMR, potwierdzenia z bazy VIES oraz faktury należy bezwzględnie przechowywać przez okres co najmniej 5 lat, licząc od końca roku kalendarzowego, w którym upłynął termin płatności podatku (w praktyce rekomendowane jest archiwizowanie dokumentów przez 10 lat).</p>
-<p>Pytanie 4: Czy w procedurze OSS można odliczać zagraniczny podatek naliczony?</p>
-<p>Odpowiedź: Nie. Procedura OSS służy wyłącznie do deklarowania i odprowadzania podatku należnego. Odzyskanie podatku naliczonego zapłaconego w innym państwie członkowskim (np. za paliwo, hotele, najem magazynu) odbywa się za pośrednictwem odrębnego wniosku VAT-Refund (VAT-Ref) składanego przez polski urząd skarbowy.</p>
-<p>Pytanie 5: Czym grozi brak zgłoszenia transakcji w deklaracji podsumowującej VAT-UE?</p>
-<p>Odpowiedź: Niezłożenie informacji podsumowującej VAT-UE w ustawowym terminie lub podanie błędnych danych stanowi przesłankę formalną, która zgodnie z art. 138 ust. 1a Dyrektywy VAT może doprowadzić do pozbawienia podatnika prawa do stosowania stawki 0% VAT dla całej dostawy.</p>
+<h2 class="section-title">Najczęściej Zadawane Pytania / FAQ</h2>
+<h3 class="sub-title">Co zrobić, jeśli numer kontrahenta w VIES ma status „nieaktywny”?</h3>
+<p>W takiej sytuacji polski sprzedawca pod żadnym pozorem nie może wystawić faktury ze stawką 0% VAT. Należy zażądać wyjaśnień od kontrahenta, wstrzymać wysyłkę towaru lub wystawić fakturę z krajową stawką 23% VAT do czasu uzyskania oficjalnego potwierdzenia rejestracji.</p>
+<h3 class="sub-title">Czy list przewozowy CMR w wersji elektronicznej (e-CMR) jest honorowany przez urzędy skarbowe?</h3>
+<p>Tak, polskie i unijne przepisy akceptują elektroniczne listy przewozowe pod warunkiem, że system e-CMR gwarantuje integralność danych, jednoznaczną identyfikację stron oraz zawiera cyfrowe poświadczenie odbioru ładunku przez nabywcę.</p>
+<h3 class="sub-title">Jak długo należy przechowywać dokumentację transakcji wewnątrzwspólnotowych?</h3>
+<p>Dokumentację księgową, listy przewozowe CMR, potwierdzenia z bazy VIES oraz faktury należy bezwzględnie przechowywać przez okres co najmniej 5 lat, licząc od końca roku kalendarzowego, w którym upłynął termin płatności podatku (w praktyce rekomendowane jest archiwizowanie dokumentów przez 10 lat).</p>
+<h3 class="sub-title">Czy w procedurze OSS można odliczać zagraniczny podatek naliczony?</h3>
+<p>Nie. Procedura OSS służy wyłącznie do deklarowania i odprowadzania podatku należnego. Odzyskanie podatku naliczonego zapłaconego w innym państwie członkowskim (np. za paliwo, hotele, najem magazynu) odbywa się za pośrednictwem odrębnego wniosku VAT-Refund (VAT-Ref) składanego przez polski urząd skarbowy.</p>
+<h3 class="sub-title">Czym grozi brak zgłoszenia transakcji w deklaracji podsumowującej VAT-UE?</h3>
+<p>Niezłożenie informacji podsumowującej VAT-UE w ustawowym terminie lub podanie błędnych danych stanowi przesłankę formalną, która zgodnie z art. 138 ust. 1a Dyrektywy VAT może doprowadzić do pozbawienia podatnika prawa do stosowania stawki 0% VAT dla całej dostawy.</p>
 
         </article>
     </main>
